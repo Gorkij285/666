@@ -1,0 +1,66 @@
+// АНИМАЦИЯ - ПРОГРУЗ СЛЕВА НА ПРАВО
+@keyframes leftToRight
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+    60%
+        transform: translateX(0.65rem)
+
+    100%
+        opacity: 1
+        transform: translateX(0rem)
+// АНИМАЦИИЯ - ПРОГРУЗ СНИЗУ В ВЕРХ(НЕРАБОТАЕТ)
+@keyframes BtnToUp
+    0%
+        opacity: 0
+        transform: translateY(5rem)
+
+    100%
+        opacity: 1
+        transform: translateY(0rem)
+
+// АНИМАЦИЯ ТЕКСТА
+@keyframes waviy
+    0%,40%,100%
+        transform: translateY(0)
+
+    20%
+        transform: translateY(-20px)
+
+@keyframes btn-color
+    0%
+        fill: #7f07f7
+    60%
+        fill: #0008f6
+    100%
+        fill: #00ddff
+
+@keyframes slideOutRight
+    0%
+        transform: translateX(-200px)
+
+    100%
+        transform: translateX(0)
+
+// @keyframes back
+//     0% 
+//         transform: translateX(0)
+
+//     100% 
+//         transform: translateX(-200px)
+
+.button-hover
+    width: 40px
+    height: 40px
+    background: #FF3E79
+    border-radius: 100px
+    transition: 0.5s
+    &:hover
+        transform: scale(1.2)
+        background: rgba(102, 250, 179, 1)
+        img 
+            background: rgba(102, 250, 179, 1)
+    img
+        transition: 0.5s
+        width: 18px
+        background: #FF3E79

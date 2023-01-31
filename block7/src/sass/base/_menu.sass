@@ -1,0 +1,110 @@
+
+
+button
+    border: none
+    background-color: #ffffff
+    img
+        width: 40px
+        height: 40px
+        display: inline-block
+        background: #ffffff
+p
+    font-size: 16px
+    letter-spacing: -0.2px
+    color: #1B1C21
+
+.menu
+    position: fixed
+    animation: leftToRight
+    animation-duration: 0.4s
+    animation-fill-mode: ease
+    width: 320px
+    height: 100%
+    min-height: 800px
+    background-color: #ffffff
+    padding: 23px 24px 32px 0px
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media (min-width: 1083px)
+        padding-bottom: 1000px
+    &__block
+        height: 95vh
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+.menu-top
+    display: flex
+    flex-direction: row
+    margin-bottom: 47px
+    padding-left: 24px
+    padding-top: 5px
+    padding-right: 5px
+    &__close
+        margin-right: 17px
+    &__logo
+        margin-right: 78px
+    &__search
+
+.menu-list
+    display: flex
+    flex-direction: column
+    position: relative
+    overflow-y: auto
+    button
+        display: flex
+        justify-content: flex-start
+        margin-bottom: 3.2rem
+        padding-left: 24px
+
+.btn-anim
+    transition: 0.5s
+    &:hover
+        transform: scale(1.2)
+    &:active
+        transition: 0.1s
+        transform: scale(1)
+
+.icon-anim
+    &:hover
+        animation: btn-color 4s ease
+
+.btn
+    transition: 0.3s
+    &:hover
+        border-left: solid 2.5px #09ffe2
+        padding-left: 24px
+        p
+            transition: 0.4s
+            color: #00b19c
+
+.menu-footer
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    width: 220px
+    height: 124px
+    display: flex
+    flex-direction: column
+    margin-bottom: 4rem
+    padding-left: 24px
+    &__buttons
+        padding: 5px
+        min-height: 50px
+        button
+            margin-right: 16px
+    &__num
+        font-size: 24px
+        line-height: 32px
+        font-weight: 700
+
+.menu-language
+    padding-left: 24px
+    display: flex
+    flex-direction: row
+    p
+        margin-right: 7px
+
+.displayNone
+    display: none
